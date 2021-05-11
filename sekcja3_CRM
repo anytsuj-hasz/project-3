@@ -1,0 +1,42 @@
+CRM - Customer Relationship Manager
+
+1. Podstawowe parametry aplikacji
+
+a) Sprawdzam, czy aplikacja wyświetla się w różnych przeglądarkach.
+b) Sprawdzam, czy aplikacja wyświetla się na urządzeniach mobilnych (różne rozdzielczości - telefon, tablet etc.).
+c) Sprawdzam, czy wyświetlone dane w aplikacji są czytelne.
+
+2. Funkcjonalność aplikacji
+
+2.1. Ogólne
+
+a) Sprawdzam, czy aplikacja wyświetla się w formie tabeli z czterema kolumnami (First Name, Last Name, Email, Action).
+b) Sprawdzam, czy w kolumnie Action znajdują się dwa linki.
+c) Sprawdzam, czy nad tabelą znajduje się przycisk Add Customer.
+d) Sprawdzam, czy lista użytkowników posiada nagłówek z nazwą aplikacji.
+
+2.2. Dodawanie nowego klienta
+
+a) Klikam przycisk Add Customer i sprawdzam, czy otwiera się formularz dodawania klienta, w którym znajdują się 3 pola: First Name, Last Name i Email.
+b) Uzupełniam 3 pola prawidłowymi danymi (Anna, Nowak, anowak@gmail.com) i naciskam przycisk Save. Sprawdzam, czy zostałam przekierowana na stronę główną aplikacji z tabelą i czy w tej tabeli znajduje się nowy klient z wpisanymi przeze mnie danymi. W aplikacji powinien pojawić się nowy klient na liście.
+c) Wprowadzam różne kombinacje pól poprawnymi danymi: First Name i Last Name (Anna, Nowak), First Name i Email (Anna, anowak@gmail.com), Last Name i Email (Nowak, anowak@gmail.com), tylko Email (anowak@gmail.com). Próbuję nacisnąć Save i sprawdzam, czy nieuzupełnione pola podświetlają się na czerwono. Weryfikuję, czy klient w tym przypadku zostaje dodany do tabeli. W aplikacjie nie powinien dodać się żaden klient do listy w tych przypadkach.
+d) Uzupełniam dane kolejnego klienta wpisując adres email, który już istnieje w tabeli. Sprawdzam, czy aplikacja pozwala mi zapisać i dodaje klienta. W aplikacji nie powinien dodać się klient do listy,
+e) W polu Email wpisuję inny format emaila (ania123$.pl) i sprawdzam, czy aplikacja pozwala mi zapisać i dodaje klienta. Aplikacja powinna pokazać błąd, że podano zły adres email.
+f) Wpisuję imię i nazwisko z małej litery i próbuję zapisać (ania nowak). Sprawdzam, czy automatycznie poprawiane są pierwsze litery na duże.
+
+2.3. Aktualizacja danych klienta
+
+a) Klikam link Update i sprawdzam, czy otwiera mi się formularz zawierający 3 pola: First Name, Last Name i Email.
+b) Sprawdzam, czy dane w otwartym formularze są identyczne jak dane w tabeli.
+c) Zmieniam dane w formularzu na inne poprawne dane i sprawdzam czy po zapisie pojawia się aktualizacja w tabeli (Jan, Kowal, jkowal@gmail.com).
+d) Usuwam wartość z pola First Name i próbuję zapisać formularz. Sprawdzam, czy klient został zmieniony. W aplikacji nie powinna pojawić się żadna zmiana na liście.
+e) Zmieniam adres Email na istniejący już w tabeli w wykazie klientów i sprawdzam, czy można zapisać i czy dane klienta się zmieniły w tabeli. Aplikacja powinna pokazać błąd, że taki adres email już istnieje na liście.
+f) Wprowadzam adres email w błędnym formacie (jankowalaaa.com) i sprawdzam, czy można zapisać i czy klient w tabeli ma zmieniony adres. Klient na liście nie powinien mieć zmienionego adresu.
+g) Zmieniam pierwsze litery First Name i Last Name (jan, kowal) na małe i sprawdzam, czy po zapisaniu autmatycznie zmieniają się na duże.
+
+2.4. Usuwanie klienta z listy
+
+a) Klikam link Delete dla jednego wybranego wiersza i sprawdzam, czy wyświetla się okno proszące o potwierdzenie wykonania operacji.
+b) Klikam przycisk nie potwierdzający usunięcie i sprawdzam, czy klient widnieje dalej na liście.
+c) Klikam przycisk potwierdzający usunięcie i sprawdzam, czy klient został usunięty z listy.
+
